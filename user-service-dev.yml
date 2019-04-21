@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/steambuy
+    url: jdbc:mysql://localhost:3306/steambuy?useSSL=false
     username: root
     password: a123
     driver-class-name: com.mysql.jdbc.Driver
