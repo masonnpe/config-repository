@@ -1,0 +1,5 @@
+spring:
+  mail:
+    host: smtp.163.com
+    username: steambuy@163.com
+    password: zxc1996917
