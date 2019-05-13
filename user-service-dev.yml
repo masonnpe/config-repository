@@ -1,4 +1,8 @@
+server:
+  port: 8000
 spring:
+  application:
+    name: user-service
   datasource:
     url: jdbc:mysql://localhost:3306/steambuy?useSSL=false&serverTimezone=UTC
     username: root
@@ -11,3 +15,18 @@ spring:
       test-on-borrow: true #获取连接时测试是否可用
       stat-view-servlet:
         allow: true #监控页面启动
+  thymeleaf:
+    cache: false
+  redis:
+    host: 192.168.10.110
+    port: 6379
+  rabbitmq:
+    host: 192.168.10.110
+    username:
+    password:
+    port: 5672
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5000/eureka
+  
