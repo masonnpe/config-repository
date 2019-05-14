@@ -11,3 +11,7 @@ spring:
       test-on-borrow: true #获取连接时测试是否可用
       stat-view-servlet:
         allow: true #监控页面启动
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
